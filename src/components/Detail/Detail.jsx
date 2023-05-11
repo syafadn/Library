@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom"
 import "../Detail/detail.css"
+import back from "../../assets/icon/back.png"
 
 const Detail = () => {
     const item = useLocation()
@@ -14,7 +15,7 @@ const Detail = () => {
                                 <div className="container flex">
                                     <div className="left">
                                         <Link to="/books">
-                                            <img src="./src/assets/icon/back.png" width="20px" className="back"/>
+                                            <img src={back} width="20px" className="back"/>
                                         </Link>
                                         <div className="main_image">
                                             <img src={item.state.item.image} alt="" width="300px" />

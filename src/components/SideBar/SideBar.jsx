@@ -2,6 +2,12 @@ import { Link } from "react-router-dom"
 import "./style.css"
 import { useSelector, useDispatch } from "react-redux";
 import { setisLoggedIn } from "../../store/userSlice";
+import logo from "../../assets/logo/library.png"
+import dashboard from "../../assets/icon/dashboard.png"
+import member from "../../assets/icon/member.png"
+import book from "../../assets/icon/book.png"
+import addmember from "../../assets/icon/add member.png"
+import addbook from "../../assets/icon/add book.png"
 
 const SideBar = () => {
     const nameUser = useSelector((state) => state.user.user) 
@@ -22,37 +28,37 @@ const SideBar = () => {
                         href="/"
                         className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
                     >
-                        <img src="./src/assets/logo/library.png" width="160"/>
+                        <img src={logo} alt="image" width="160"/>
                     </a>
                     <hr />
                     <ul className="nav nav-pills flex-column mb-auto">
                         <li className="nav-item">
                             <Link to="/dashboard" className="nav-link d-flex align-items-center gap-3 text-black" aria-current="page">
-                                <img src="./src/assets/icon/dashboard.png" width="25"/>
+                                <img src={dashboard} width="25"/>
                                 Dashboard
                             </Link>
                         </li>
                         <li>
                             <Link to="/members" className="nav-link d-flex align-items-center gap-2 text-black">
-                                <img src="./src/assets/icon/member.png" width="40"/>
+                                <img src={member} width="40"/>
                                 Members
                             </Link>
                         </li>
                         <li>
                             <Link to="/books" className="nav-link d-flex align-items-center gap-3 text-black">
-                                <img src="./src/assets/icon/book.png" width="30"/>
+                                <img src={book} width="30"/>
                                 Books
                             </Link>
                         </li>
                         <li>
                             <Link to="/addmember" className="nav-link d-flex align-items-center gap-3 text-black">
-                                <img src="./src/assets/icon/add member.png" width="30"/>
+                                <img src={addmember} width="30"/>
                                 Add Member
                             </Link>
                         </li>
                         <li>
                             <Link to="/addbook" className="nav-link d-flex align-items-center gap-3 text-black">
-                                <img src="./src/assets/icon/add book.png" width="30"/>
+                                <img src={addbook} width="30"/>
                                 Add Book
                             </Link>
                         </li>
