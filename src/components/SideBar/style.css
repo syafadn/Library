@@ -1,0 +1,19 @@
+.nav-link:hover {
+    background-color:rgb(200, 199, 255);
+  }
+  
+  .nav-link {
+    margin-top: 0.5rem;
+  }
+  
+  .bg-sidebar {
+    background-color: rgb(232, 232, 232);
+  }
+  
+  .members {
+    background-color: rgb(217, 217, 217) !important;
+  }
+  
+  .books {
+    background-color: rgb(217, 217, 217) !important;
+  }
