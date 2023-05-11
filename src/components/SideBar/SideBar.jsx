@@ -8,6 +8,7 @@ import member from "../../assets/icon/member.png"
 import book from "../../assets/icon/book.png"
 import addmember from "../../assets/icon/add member.png"
 import addbook from "../../assets/icon/add book.png"
+import user from "../../assets/icon/user.png"
 
 const SideBar = () => {
     const nameUser = useSelector((state) => state.user.user) 
@@ -72,7 +73,7 @@ const SideBar = () => {
                             aria-expanded="false"
                         >
                             <img
-                                src="./src/assets/icon/user.png"
+                                src={user}
                                 alt=""
                                 width={32}
                                 height={32}

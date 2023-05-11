@@ -1,4 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
+import book from "../../assets/icon/book.png"
+import member from "../../assets/icon/member.png"
 
 const CountMember = gql`
 query CountMember {
@@ -40,7 +42,7 @@ const Dashboard = () => {
                 <div className="books card m-3" style={{ maxWidth: 540 }}>
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="./src/assets/icon/book.png" className="img-fluid rounded-start" width="60"/>
+                            <img src={book} className="img-fluid rounded-start" width="60"/>
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
@@ -54,7 +56,7 @@ const Dashboard = () => {
                 <div className="members card m-3" style={{ maxWidth: 540 }}>
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="./src/assets/icon/member.png" className="img-fluid rounded-start" width="80"/>
+                            <img src={member} className="img-fluid rounded-start" width="80"/>
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
